@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Formulaire d'ajout </title>
+        <link rel="stylesheet" href="liste.css">
+    </head>
+
+    <body>
+
+        <header>
+            <nav class="contenu_header">
+                <div><img src="images/logo_baby.svg"></div>
+                <ul>
+                    <li>Accueil</li>
+                    <li>Exemple</li>
+                    <li>Rechercher</li>
+                    <li>Créer une liste</li>
+                    <li>Aide</li>
+                    <li>Partager</li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="main_form">
+            
+            <section class="formulaire">
+                <article class="contenu_formulaire">
+                    <form> 
+                        
+                    </form>
+                </article>
+            </section>
+            
+            
+            <section id="form_message_perso">
+                <article class="contenu_form_message_perso">
+                    <div>
+                        <h2> Ajouter des objets à votre liste ! </h2>
+                    </div>
+                    
+                    <form action="liste.html" method="POST">
+                        <div>
+                            <label for="tri"> Trier </label>
+                            <select name="categories" id="select-categories">
+                                <option value="">--Trier par--</option>
+                                <option value="prix_croissant">Prix-croissant</option>
+                                <option value="prix_decroissant">Prix-decroissant</option>
+                                <option value="coup_de_coeur">Coup de coeur</option>
+                                <optgroup label="enseigne">
+                                    <option value="laredoute">  Laredoute (2)</option>
+                                    <option value="smallable">Smallable(2)</option>
+                                    <option value="bebe9">Bebe9(4)</option>
+                                    <option value="aubert">Aubert(4)</option>
+                                </optgroup>
+                            </select>    
+                        </div>
+                        
+                        <div>
+                            <label for="name">Nom :</label>
+                            <input type="text" id="name" name="user_name">
+                        </div>
+
+                        <div class="radio">
+                            <label id="label_categorie"> Catégorie : </label>
+                            <div>
+                                <label for="urgent"> Urgent</label>
+                                <input type="radio" id="urgent" value="element_urgent">
+                                
+                            </div>
+                           
+                            <div>
+                                <label for="reserve"> Déjà reservé</label>
+                                <input type="radio" id="reserve" name="deja_reserve" value="element_deja_reserve">
+                            </div>
+                            
+                            <div>
+                                <label for="achete"> Déjà acheté</label>
+                                <input type="radio" id="achete" name="deja_achete" value="element_deja_achete">
+                            </div>
+
+                            <div>
+                                <label for="normal"> Normal</label>
+                                <input type="radio" id="normal" name="normal" value="element_normal">
+                            </div>
+
+                        </div>
+
+                        <div>
+                            <label for="description">Description :</label>
+                            <textarea id="description" name="user_description"></textarea>
+                        </div>
+
+
+                        <div>
+                            <label for="msg">Message privé(facultatif) :</label>
+                            <textarea id="msg" name="user_message"></textarea>
+                        </div>
+
+                        <div class="button">
+                            <button action="liste.html" type="submit">Ajouter</button>
+                        </div>
+
+                    </form>
+                </article>
+            </section>
+
+
+        </main>
+
+        <footer>
+            <article class="contenu_footer">
+
+                <div class="reseaux">
+                    <div>
+                        <a href="https://www.instagram.com/?hl=fr" target="_blank"><img src="images/reseaux/instagram.svg" alt="logo_instagram"></a>
+                    </div>
+                    <div>
+                        <a href="https://fr-fr.facebook.com/" target="_blank"><img src="images/reseaux/facebook.svg" alt="logo_facebook"></a>
+                    </div>
+                    <div>
+                        <a href="https://fr.linkedin.com/" target="_blank"><img src="images/reseaux/linkedin.svg" alt="logo_linkedin"></a>
+                    </div>
+                    <div>
+                        <a href="https://www.pinterest.fr/" target="_blank"><img src="images/reseaux/pinterest-social-logo.svg" alt="logo_pinterest"></a>
+                    </div>
+                </div>
+
+                <nav class="liens">
+                    <ul>
+                        <li> Accueil</li>
+                        <li> Exemple</li>
+                        <li> Rechercher</li>
+                    </ul>
+                    <ul>
+                        <li> Créer une liste</li>
+                        <li> Aide</li>
+                        <li> Partager</li>
+                    </ul>
+                </nav>
+
+            </article>
+        </footer>
+        
+    </body>
+
+</html>
